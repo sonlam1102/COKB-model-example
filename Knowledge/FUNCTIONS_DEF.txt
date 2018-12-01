@@ -7,6 +7,7 @@ LinearAlgebra:-Determinant(convert(_A.K,'Matrix'));
 end_proc
 properties
 end_properties
+show: true
 end_function
 begin_function:HANG(_A)
 _A: MATRAN
@@ -17,6 +18,7 @@ end_proc
 properties
 BDSOCAP(_A)
 end_properties
+show: true
 end_function
 begin_function:NGHIEM(_W)
 _W: HEPHUONGTRINH
@@ -26,6 +28,7 @@ MaTRAnMoRONg:=convert(BDSOCAP(_W.Q),'Matrix'): HaNgMr:=HANG(_W.Q): HaNgHs:=_W.a:
 end_proc
 properties
 end_properties
+show: true
 end_function
 begin_function:SODONG(_Q)
 _Q: MATRAN
@@ -35,6 +38,7 @@ ArrayTools:-Size(_Q.K)[1];
 end_proc
 properties
 end_properties
+show: true
 end_function
 begin_function:SOCOT(_Q)
 _Q: MATRAN
@@ -44,6 +48,7 @@ ArrayTools:-Size(_Q.K)[2];
 end_proc
 properties
 end_properties
+show: true
 end_function
 begin_function:MORONG(_A,_B)
 _A: MATRAN
@@ -54,6 +59,7 @@ convert((<convert(_A.K,'Matrix')|convert(_B.K,'Vector[column]')>),'Array');
 end_proc
 properties
 end_properties
+show: true
 end_function
 begin_function:BDSOCAP(_A)
 _A: MATRAN
@@ -63,6 +69,7 @@ ChECk:=true: MAtriX:=_A.K: for i from 1 to _A.m do for j from 1 to _A.n do if (n
 end_proc
 properties
 end_properties
+show: true
 end_function
 begin_function:NGHICHDAO(_A)
 _A: MATRANKHANGHICH
@@ -73,6 +80,7 @@ end_proc
 properties
 BDSOCAP(_A.Q)
 end_properties
+show: true
 end_function
 begin_function:MORONGNGHICHDAO(_A)
 _A: MATRANKHANGHICH
@@ -84,6 +92,7 @@ properties
 _A.Q.n=SOCOT(_A.Q)
 _A.Q.m=SODONG(_A.Q)
 end_properties
+show: true
 end_function
 end_functions
 
