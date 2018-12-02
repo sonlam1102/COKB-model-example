@@ -1,0 +1,59 @@
+begin_concept:VECTOR
+begin_variables
+u:list
+A:MATRAN
+B:MATRAN
+Q:MATRAN
+p:string
+m:INT
+end_variables
+begin_constraints
+end_constraints
+begin_properties
+A.K=PHUONGTRINHVECTOR(u)
+B.K= HESOTUDOVECTOR(V)
+B.m=SODONG(B)
+B.n=SOCOT(B)
+A.m=SODONG(A)
+A.n=SOCOT(A)
+Q.K=MORONG(A,B)
+Q.m=SODONG(Q)
+Q.n=SOCOT(Q)
+m=CHIEUVECTOR(V)
+HANG(A)
+HANG(Q)
+end_properties
+begin_computation_relations
+end_computation_relations
+begin_rules
+begin_rule
+kind_rules = dltt
+hypothesis_part: 
+A.n=HANG(A)
+HANG(Q)=HANG(A)
+end_hypothesis_part
+goal_part:  
+p=["doc lap tuyen tinh"]   
+end_goal_part
+end_rule
+begin_rule
+kind_rules = pttt
+hypothesis_part:  
+[">",HANG(Q),HANG(A)]
+end_hypothesis_part
+goal_part:   
+p=["phu thuoc tuyen tinh"]
+end_goal_part
+end_rule
+begin_rule
+kind_rules = dltt
+hypothesis_part:  
+HANG(Q)=HANG(A)
+[">",A.n,HANG(Q)]
+end_hypothesis_part
+goal_part:    
+p=["doc lap tuyen tinh"]
+end_goal_part
+end_rule
+end_rules
+end_concept
