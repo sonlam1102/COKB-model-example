@@ -11,7 +11,7 @@ begin_constraints
 end_constraints
 begin_properties
 A.K=PHUONGTRINHVECTOR(u)
-B.K= HESOTUDOVECTOR(V)
+B.K=HESOTUDOVECTOR(V)
 B.m=SODONG(B)
 B.n=SOCOT(B)
 A.m=SODONG(A)
@@ -33,6 +33,7 @@ A.n=HANG(A)
 HANG(Q)=HANG(A)
 end_hypothesis_part
 goal_part:  
+p
 p=["doc lap tuyen tinh"]   
 end_goal_part
 end_rule
@@ -41,7 +42,8 @@ kind_rules = pttt
 hypothesis_part:  
 [">",HANG(Q),HANG(A)]
 end_hypothesis_part
-goal_part:   
+goal_part:
+p   
 p=["phu thuoc tuyen tinh"]
 end_goal_part
 end_rule
@@ -51,7 +53,8 @@ hypothesis_part:
 HANG(Q)=HANG(A)
 [">",A.n,HANG(Q)]
 end_hypothesis_part
-goal_part:    
+goal_part:  
+p  
 p=["doc lap tuyen tinh"]
 end_goal_part
 end_rule
