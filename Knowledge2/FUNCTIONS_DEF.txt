@@ -118,7 +118,7 @@ begin_function:PHUONGTRINHVECTOR(_u)
 _u: list
 result: Array
 begin_proc
-PhUOnGTriNhVT:=convert(_u,'Array'):ReSULt:=ArrayTools:-Reshape(PhUOnGTriNhVT,ArrayTools:-Size(PhUOnGTriNhVT)[2],ArrayTools:-Size(PhUOnGTriNhVT)[1]): ReSULt;
+PhUOnGTriNhVT:=convert(_u,'Array'): ReSULt:=Array(1..ArrayTools:-Size(PhUOnGTriNhVT)[2],1..ArrayTools:-Size(PhUOnGTriNhVT)[1]): for i from 1 to ArrayTools:-Size(PhUOnGTriNhVT)[2] do: for j from 1 to ArrayTools:-Size(PhUOnGTriNhVT)[1] do: ReSULt[i,j]:=PhUOnGTriNhVT[j][i] end do: end do: ReSULt;
 end_proc
 properties
 end_properties

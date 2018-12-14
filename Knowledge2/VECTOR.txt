@@ -27,10 +27,9 @@ begin_computation_relations
 end_computation_relations
 begin_rules
 begin_rule
-kind_rules = dltt
+kind_rules = doc lap tuyen tinh
 hypothesis_part: 
-A.n=HANG(A)
-HANG(Q)=HANG(A)
+m=HANG(A)
 end_hypothesis_part
 goal_part:  
 p
@@ -38,24 +37,13 @@ p=["doc lap tuyen tinh"]
 end_goal_part
 end_rule
 begin_rule
-kind_rules = pttt
+kind_rules = phu thuoc tuyen tinh
 hypothesis_part:  
-[">",HANG(Q),HANG(A)]
-end_hypothesis_part
-goal_part:
-p   
-p=["phu thuoc tuyen tinh"]
-end_goal_part
-end_rule
-begin_rule
-kind_rules = dltt
-hypothesis_part:  
-HANG(Q)=HANG(A)
-[">",A.n,HANG(Q)]
+[">",m,HANG(A)]
 end_hypothesis_part
 goal_part:  
 p  
-p=["doc lap tuyen tinh"]
+p=["phu thuoc tuyen tinh"]
 end_goal_part
 end_rule
 end_rules
