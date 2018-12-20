@@ -115,24 +115,14 @@ end_properties
 show: false
 end_function
 begin_function:PHUONGTRINHVECTOR(_u)
-_u: list
+_u: set
 result: Array
 begin_proc
-PhUOnGTriNhVT:=convert(_u,'Array'): ReSULt:=Array(1..ArrayTools:-Size(PhUOnGTriNhVT)[2],1..ArrayTools:-Size(PhUOnGTriNhVT)[1]): for i from 1 to ArrayTools:-Size(PhUOnGTriNhVT)[2] do: for j from 1 to ArrayTools:-Size(PhUOnGTriNhVT)[1] do: ReSULt[i,j]:=PhUOnGTriNhVT[j][i] end do: end do: ReSULt;
+Array([op(_u)]);
 end_proc
 properties
 end_properties
 show: true
-end_function
-begin_function:HESOTUDOVECTOR(_V)
-_V: VECTOR
-result: Array
-begin_proc
-Array(symmetric,1.._V.A.m,1..1);
-end_proc
-properties
-end_properties
-show: false
 end_function
 begin_function:CHIEUVECTOR(_V)
 _V: VECTOR
