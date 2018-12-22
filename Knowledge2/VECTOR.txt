@@ -47,5 +47,27 @@ p
 p=["phu thuoc tuyen tinh"]
 end_goal_part
 end_rule
+begin_rule
+kind_rules = phu thuoc tuyen tinh
+hypothesis_part:  
+A.m=A.n
+DINHTHUC(A)=0
+end_hypothesis_part
+goal_part:  
+p  
+p=["phu thuoc tuyen tinh"]
+end_goal_part
+end_rule
+begin_rule
+kind_rules = doc lap tuyen tinh
+hypothesis_part:  
+A.m=A.n
+[">",DINHTHUC(A),0]
+end_hypothesis_part
+goal_part:  
+p  
+p=["phu thuoc tuyen tinh"]
+end_goal_part
+end_rule
 end_rules
 end_concept

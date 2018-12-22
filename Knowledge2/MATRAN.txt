@@ -9,6 +9,7 @@ end_constraints
 begin_properties
 m=SODONG(A)
 n=SOCOT(A)
+HANG(A)
 end_properties
 begin_computation_relations
 end_computation_relations
