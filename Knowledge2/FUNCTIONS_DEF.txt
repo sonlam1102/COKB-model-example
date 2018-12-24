@@ -134,6 +134,29 @@ properties
 end_properties
 show: true
 end_function
+begin_function:MORONGCOSO(_V, _W)
+_V: VECTOR
+_W: VECTOR
+result: Array
+begin_proc
+convert((<convert(Array([op(_V.u)]),'Matrix')|convert(Array([op(_W.u)]),'Matrix')>),'Array');
+end_proc
+properties
+end_properties
+show: true
+end_function
+begin_function:DOICOSO(_V, _W)
+_V: VECTOR
+_W: VECTOR
+result: Array
+begin_proc
+VaLUECoSo:=MORONGCOSO(_V, _W): if (not type(VaLUECoSo,'function')) then VaLUECoSo else `` end if:
+end_proc
+properties
+MORONGCOSO(_V, _W)
+end_properties
+show: true
+end_function
 end_functions
 
 
