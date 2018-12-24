@@ -115,7 +115,7 @@ end_properties
 show: false
 end_function
 begin_function:PHUONGTRINHVECTOR(_u)
-_u: set
+_u: list
 result: Array
 begin_proc
 Array([op(_u)]);

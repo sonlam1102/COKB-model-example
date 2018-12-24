@@ -1,6 +1,6 @@
 begin_concept:VECTOR
 begin_variables
-u:set
+u:list
 A:MATRAN
 p:string
 m:INT
