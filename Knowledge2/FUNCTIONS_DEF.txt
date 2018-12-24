@@ -134,26 +134,38 @@ properties
 end_properties
 show: true
 end_function
-begin_function:MORONGCOSO(_V, _W)
+begin_function:MORONGCOSO(_V,_W)
 _V: VECTOR
 _W: VECTOR
 result: Array
 begin_proc
-convert((<convert(Array([op(_V.u)]),'Matrix')|convert(Array([op(_W.u)]),'Matrix')>),'Array');
+convert((<LinearAlgebra:-Transpose(convert(Array([op(_V.u)]),'Matrix'))|LinearAlgebra:-Transpose(convert(Array([op(_W.u)]),'Matrix'))>),'Array');
 end_proc
 properties
 end_properties
 show: true
 end_function
-begin_function:DOICOSO(_V, _W)
+begin_function:DOICOSO(_V,_W)
 _V: VECTOR
 _W: VECTOR
 result: Array
 begin_proc
-VaLUECoSo:=MORONGCOSO(_V, _W): if (not type(VaLUECoSo,'function')) then VaLUECoSo else `` end if:
+MoRongCSo:=convert(MORONGCOSO(_V,_W), 'Array'): convert(LinearAlgebra:-ReducedRowEchelonForm(convert(MoRongCSo,'Matrix')),'Array'); 
 end_proc
 properties
-MORONGCOSO(_V, _W)
+MORONGCOSO(_V,_W)
+end_properties
+show: true
+end_function
+begin_function:MATRANDOICOSO(_V,_W)
+_V: VECTOR
+_W: VECTOR
+result: Array
+begin_proc
+MaTrAnMoRongCOSo:=convert(DOICOSO(_V,_W), 'Array'): MaTrAnMoRongCOSo(1..ArrayTools:-Size(MaTrAnMoRongCOSo)[1], (round(ArrayTools:-Size(MaTrAnMoRongCOSo)[2]/2)+1)..(ArrayTools:-Size(MaTrAnMoRongCOSo)[2]));
+end_proc
+properties
+DOICOSO(_V,_W)
 end_properties
 show: true
 end_function
