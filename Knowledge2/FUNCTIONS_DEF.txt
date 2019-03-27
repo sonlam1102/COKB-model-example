@@ -169,6 +169,16 @@ DOICOSO(_V,_W)
 end_properties
 show: true
 end_function
+begin_function:NGHIEMPT(_Q)
+_Q: PHUONGTRINHMT
+result: Array
+begin_proc
+_Q.T.K*_Q.B.K
+end_proc
+properties
+end_properties
+show: true
+end_function
 end_functions
 
 
