@@ -173,7 +173,7 @@ begin_function:NGHIEMPT(_Q)
 _Q: PHUONGTRINHMT
 result: Array
 begin_proc
-_Q.T.K*_Q.B.K
+_Q.T.K*_Q.B.K;
 end_proc
 properties
 end_properties
