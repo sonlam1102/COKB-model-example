@@ -173,7 +173,7 @@ begin_function:NGHIEMPT(_Q)
 _Q: PHUONGTRINHMT
 result: Array
 begin_proc
-_Q.T.K*_Q.B.K;
+convert(LinearAlgebra:-MatrixMatrixMultiply(convert(_Q.T.K, 'Matrix'), convert(_Q.B.K, 'Matrix')), 'Array');
 end_proc
 properties
 end_properties
