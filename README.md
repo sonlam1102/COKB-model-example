@@ -12,3 +12,8 @@
 Hien D. Nguyen, Son T. Luu and Nhon V. Do, A method for Representation the Knowledge of Functions and Operators and Application, Proceedings of the 3rd International Conference on Machine Learning and Soft Computing (ICMLSC) 2019.   
 https://dl.acm.org/citation.cfm?id=3311012
 
+## Contact Information ##  
+Please contact Mr. Son Thanh Luu if you have any questions or discussion about this project.     
+
+Email:         sonlt@uit.edu.vn   
+Alternative:   son.lt1103@gmail.com 
